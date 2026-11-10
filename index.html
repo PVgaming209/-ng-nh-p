@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="trangtri.css">
+</head>
+<h1 class="login-dangnhap">Đăng nhập</h1>
+<body>
+    <div class="form-container">
+        <form action="trang.html" method="post">
+            <label for="username">Tên đăng nhập:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required><br><br>
+        </form>
+        <button class="button" onclick="exer()">Đăng nhập</button>
+        <script>
+            function exer() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+                if (username === "a" && password === "123456") {
+                    window.location.href = "trang.html";
+                } else {
+                    alert("Tên đăng nhập hoặc mật khẩu không đúng!");
+                }
+            }
+        </script>
+    </div>
+
+</body>
+</html>
